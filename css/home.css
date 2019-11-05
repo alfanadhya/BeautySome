@@ -3,6 +3,18 @@
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    padding: 30px;
+    width: 100vw;
+}
+
+.produk-review-title {
+    font-size: 20pt;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .produk-review-content {
@@ -10,6 +22,34 @@
 }
 
 .produk {
-    padding: 20px;
-    text-align: center;
+    padding-right: 20px;
+    width: 30%;
+}
+
+.foto-produk img {
+    width: 100%;
+}
+
+.brand-produk {
+    margin-top: 15px;
+    font-size: 8pt;
+    text-transform: uppercase;
+    letter-spacing: 1;
+}
+
+.nama-produk {
+    font-weight: bold;
+    font-size: 20pt;
+}
+
+.btn-add-review {
+    margin-top: 10px;
+    background-color: #e85581;
+    border: none;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1.5;
+    border-radius: 4px;
 }
