@@ -4,25 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/login.css" type="text/css">
     <title>Login - BeautySome</title>
 </head>
 <body>
     <div class="login">
-        <h1 class="login-title">
-            "Login to BeautySome"
-        </h1>
-        <form class="login-form">
-            <input type="text" id="username" value placeholder="username"
-            class="login-field">
-            <input type="password" id="password" value placeholder="password"
-            class="login-field">
-            <input type="submit" id="submit" class="button"
-            value="Login">
-        </form>
-        <div class="login-register">
-            <input type="button" id="submit" class="button"
-            value="Don't have an account? Register">
+        <div class="login-cover">
+            <h1 class="login-title">
+                Login to BeautySome
+            </h1>
+            <form class="login-form">
+                <div class="login-input">
+                    <input type="text" id="username" value placeholder="username"
+                    class="login-field">
+                </div>
+                <div class="login-input">
+                    <input type="password" id="password" value placeholder="password"
+                    class="login-field">
+                </div>
+                <div class="login-button">
+                    <input type="submit" id="submit" class="button"
+                    value="Login">
+                </div>
+            </form>
+            <div class="login-form">
+                <div class="login-button">
+                    <button onclick="register()" class="button">
+                        Don't have an account? Register
+                    </button>
+                </div>
+            </div>
         </div>
-    </div>    
+    </div>
+    <script>
+        function register() {
+            window.location = "register.html";
+        }
+    </script>    
 </body>
 </html>
