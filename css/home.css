@@ -6,24 +6,58 @@
     overflow-x: hidden;
 }
 
+.jumbotron {
+    height: 700px;
+    background-image: url(../img/bg-jumbotron.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 60pt;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 140px;
+}
+
+.jumbotron-desc {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.jumbotron-desc p {
+    width: 70%;
+    margin-top: 20px;
+    font-size: 15pt;
+    line-height: 1.5em;
+}
+
+.skincare-bg {
+    text-align: center;
+    margin-top: -300px;
+}
+
 .container {
     padding: 30px;
     width: 100vw;
 }
 
+.produk-review {
+    padding: 80px 50px 50px 50px;
+}
+
 .produk-review-title {
-    font-size: 20pt;
+    font-size: 32pt;
     margin-bottom: 20px;
     font-weight: bold;
 }
 
 .produk-review-content {
-    display: flex;
-}
-
-.produk {
-    padding-right: 20px;
-    width: 30%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 60px;
+    margin: 30px auto 100px auto;
 }
 
 .foto-produk img {
@@ -32,7 +66,7 @@
 
 .brand-produk {
     margin-top: 15px;
-    font-size: 8pt;
+    font-size: 12pt;
     text-transform: uppercase;
     letter-spacing: 1;
 }
@@ -40,16 +74,41 @@
 .nama-produk {
     font-weight: bold;
     font-size: 20pt;
+    height: 75px;
 }
 
-.btn-add-review {
-    margin-top: 10px;
+.info-text {
+    font-size: 10pt;
+    line-height: 2em;
+    max-height: 10em;
+    position: relative;
+    display: inline-block;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-align: justify;
+}
+
+.info-produk,
+.rate-produk {
+    padding: 5px 0 0 0;
+}
+
+.rate-produk {
+    display: block;
+}
+
+.btn-home {
+    margin-top: 20px;
     background-color: #e85581;
     border: none;
-    padding: 10px;
+    padding: 13px;
     text-transform: uppercase;
     font-weight: bold;
     color: white;
-    letter-spacing: 1.5;
     border-radius: 4px;
+    font-size: 12pt;
+}
+
+.btn-home>span {
+    letter-spacing: 1.5px;
 }
