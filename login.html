@@ -16,14 +16,14 @@
             <form class="login-form">
                 <div class="login-input">
                     <input type="text" id="username" value placeholder="username"
-                    class="login-field">
+                    class="login-field" required>
                 </div>
                 <div class="login-input">
                     <input type="password" id="password" value placeholder="password"
-                    class="login-field">
+                    class="login-field" required>
                 </div>
                 <div class="login-button">
-                    <input type="submit" id="submit" class="button"
+                    <input type="submit" id="submit" class="button" onclick = "home()"
                     value="Login">
                 </div>
             </form>
@@ -39,6 +39,9 @@
     <script>
         function register() {
             window.location = "register.html";
+        }
+        function home(){
+            window.location = "index.html";
         }
     </script>    
 </body>
