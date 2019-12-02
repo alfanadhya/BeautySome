@@ -1,16 +1,26 @@
+<?php
+session_start();
+$_SESSION['Login'] =  false;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=a, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BeautySome</title>
-    <link rel="stylesheet" href="css/home.css" type="text/css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
-
-<BODY>
+<body>
     <div class="jumbotron">
+        <div class="navbar" style="display: flex; justify-content: center; padding-top: 20px; font-weight: bold;">
+        <a href="register.php" style="text-decoration: none;">REGISTER | </a>
+        <a href="login.php" style="text-decoration: none;">LOGIN</a>
+        </div>
+        <div class="logo" style="display: flex; justify-content: center; margin-top: 80px;">
+        <img src="./img/logo-beautysome.png" alt="" width=100 style="display: block;">
+        </div>
         <h1>BeautySome</h1>
         <div class="jumbotron-desc">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus accusantium repudiandae distinctio voluptate sint, quam perspiciatis laboriosam, repellat tempore quibusdam adipisci aspernatur facere praesentium illo dolore maxime ex
@@ -20,15 +30,16 @@
     </div>
 
     <div class="skincare-bg">
-        <img src="./img/skincare-bg.png" alt="">
+        <img src="img/skincare-bg.png" alt="">
     </div>
 
     <div class="produk-review">
-        <div class="produk-review-title">
-            <h3>Add Review</h3>
+        <div class="produk-review-title" style="display: flex;">
+            <h3>List Produk</h3>
+            <a href="list-produk.php" style="font-size: 15px; line-height: 90px; margin-left: 10px; text-decoration: none;">Lihat semua</a>
         </div>
         <div class="produk-review-content">
-            <div class="produk produk-1">
+            <div id="produk">
                 <div class="foto-produk">
                     <img src="./img/lip.jpg" width="100px">
                 </div>
@@ -41,9 +52,11 @@
                     <div class="average-produk">4.1</div>
                     <div class="jml-review">Reviewed by : 100 </div>
                 </div>
-                <button class="btn-home" onclick="pindah()"><span>read more</span></button>
+                <div class="btn-more">
+                    <button class="btn-home" onclick="pindah()"><span>Add review</span></button>
+                </div>
             </div>
-            <div class="produk produk-2">
+            <div id="produk">
                 <div class="foto-produk">
                     <img src="./img/pore.jpg" width="100px">
                 </div>
@@ -56,9 +69,12 @@
                     <div class="average-produk">4.2</div>
                     <div class="jml-review">Reviewed by : 100 </div>
                 </div>
-                <button class="btn-home" onclick="pindah()"><span>read more</span></button>
+                <div class="btn-more">
+                    <button class="btn-home" onclick="pindah()"><span>Add review</span></button>
+                </div>
+
             </div>
-            <div class="produk produk-3">
+            <div id="produk">
                 <div class="foto-produk">
                     <img src="./img/sunscreen.jpg" width="100px">
                 </div>
@@ -71,16 +87,18 @@
                     <div class="average-produk">4.3</div>
                     <div class="jml-review">Reviewed by : 100 </div>
                 </div>
-                <button class="btn-home" onclick="pindah()"><span>read more</span></button>
+                <div class="btn-more">
+                    <button class="btn-home" onclick="pindah()"><span>Add review</span></button>
+                </div>
+
             </div>
         </div>
     </div>
 
-    <SCRIPT>
+    <script>
         function pindah() {
-            window.location = "review.html"
+            window.location = "login.php";
         }
-    </SCRIPT>
-</BODY>
-
+    </script> 
+</body>
 </html>

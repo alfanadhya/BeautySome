@@ -4,38 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="css/register.css" >
-    <title>Register - BeautySome</title>
+    <title>Register|BeautySome</title>
+    <link rel="stylesheet" href="css/register.css">
 </head>
 <body>
     <div class="register">
-        <div class="register-cover">
-            <h1 class="register-title">
-                Register to BeautySome
-            </h1>
-            <form class="register-form">
+    <div class="register-cover">
+<h1 class="register-title">Register to BeautySome</h1>
+<form action="proses-register.php" method="POST" class="register-form">
                 <div class="register-input">
-                    <input type="text" id="name" value placeholder="name"
-                    class="register-field" required>
+                    <input type="text" id="name" name="name" placeholder="name"
+                    class="register-field">
                 </div>
                 <div class="register-input">
-                    <input type="email" id="email" value placeholder="email"
-                    class="register-field" required>
+                    <input type="text" id="email" name="userEmail" placeholder="email"
+                    class="register-field">
                 </div>
                 <div class="register-input">
-                    <input type="text" id="username" value placeholder="username"
-                    class="register-field" required>    
+                    <input type="text" id="username" name="userName" placeholder="username"
+                    class="register-field">    
                 </div>
                 <div class="register-input">
-                    <input type="password" id="password" value placeholder="password"
-                    class="register-field" required>
+                    <input type="password" id="password" name="userPass" placeholder="password"
+                    class="register-field">
                 </div>
                 <div class="register-input">
                     <input type="password" id="confirm-password" value placeholder="confirm password"
-                    class="register-field" required>
+                    class="register-field">
                 </div>
                 <div class="register-button">
-                    <input type="submit" id="submit" class="button"
+                    <input type="submit" id="submit" class="button" name="register"
                     value="Register">
                 </div>
             </form>
@@ -47,11 +45,12 @@
                 </div>
             </div>
         </div>
-    </div>
-    <script>
+        </div>
+
+        <script>
         function login(){
-            window.location = "login.html";
+            window.location = "login.php";
         }
-    </script>  
+    </script> 
 </body>
 </html>

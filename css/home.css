@@ -17,7 +17,6 @@ h1 {
     font-size: 60pt;
     text-align: center;
     letter-spacing: 2px;
-    margin-top: 140px;
 }
 
 .jumbotron-desc {
@@ -35,12 +34,19 @@ h1 {
 
 .skincare-bg {
     text-align: center;
-    margin-top: -300px;
+    margin-top: -200px;
 }
 
 .container {
     padding: 30px;
     width: 100vw;
+}
+
+#produk {
+    background-color: white;
+    border: rgb(228, 228, 228) 1px solid;
+    padding: 30px;
+    border-radius: 0.5em;
 }
 
 .produk-review {
@@ -56,7 +62,7 @@ h1 {
 .produk-review-content {
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-gap: 60px;
+    grid-gap: 30px;
     margin: 30px auto 100px auto;
 }
 
@@ -107,8 +113,14 @@ h1 {
     color: white;
     border-radius: 4px;
     font-size: 12pt;
+    cursor: pointer;
 }
 
 .btn-home>span {
     letter-spacing: 1.5px;
+}
+
+.btn-more {
+    display: flex;
+    justify-content: flex-end;
 }
